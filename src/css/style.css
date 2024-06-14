@@ -1,3 +1,7 @@
+body {
+  min-width: 1200px;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -44,7 +48,7 @@ header .menu li {
   transition: 0.2s;
 }
 header .menu li:hover a {
-  color: #0380B3;
+  color: #0380b3;
 }
 header .iconList img {
   width: 32px;
@@ -98,10 +102,12 @@ header .iconList img {
 }
 
 .whoWeAre {
-  background-color: #05224C;
+  background-color: #05224c;
   padding: 25px 0;
 }
-.whoWeAre p, .whoWeAre h3, .whoWeAre span {
+.whoWeAre p,
+.whoWeAre h3,
+.whoWeAre span {
   color: #fff;
 }
 .whoWeAre .container {
@@ -144,7 +150,8 @@ header .iconList img {
   gap: 15px;
   margin-top: 30px;
 }
-.business_cards h4, .business_cards p {
+.business_cards h4,
+.business_cards p {
   color: #fff;
 }
 .business_cards h4 {
@@ -178,7 +185,7 @@ header .iconList img {
   background-color: #152259;
 }
 .business_cards li:last-child {
-  background-color: #0380B3;
+  background-color: #0380b3;
 }
 .business_cards img {
   margin-top: auto;
@@ -207,13 +214,13 @@ header .iconList img {
   width: 100%;
 }
 .history .his-list li:nth-child(even) .date {
-  background-color: #4F93CF;
+  background-color: #4f93cf;
 }
 .history .his-list li:nth-child(even) .date .line {
-  background: #4F93CF;
+  background: #4f93cf;
 }
 .history .his-list li:nth-child(even) .date .line::after {
-  background-color: #4F93CF;
+  background-color: #4f93cf;
 }
 .history .his-list .date {
   display: flex;
@@ -222,7 +229,7 @@ header .iconList img {
   width: 77px;
   height: 77px;
   border-radius: 50%;
-  background-color: #162C89;
+  background-color: #162c89;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -231,7 +238,7 @@ header .iconList img {
 .history .his-list .date .line {
   width: 1px;
   height: 200px;
-  background: #162C89;
+  background: #162c89;
   position: absolute;
   left: 0;
   bottom: 38px;
@@ -242,7 +249,7 @@ header .iconList img {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #162C89;
+  background-color: #162c89;
   position: absolute;
   top: 0;
   left: -3px;
@@ -267,7 +274,7 @@ header .iconList img {
   box-shadow: 0 0 0 2px #333;
 }
 .vision-list li:hover h5 {
-  color: #0380B3;
+  color: #0380b3;
 }
 .vision-list li h5 {
   font-size: 18px;
@@ -288,7 +295,7 @@ header .iconList img {
 
 footer {
   margin-top: 100px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,4 +327,25 @@ footer {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.DeSEMS-title {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #162c89;
+}
+.DeSEMS-subTitle {
+  color: #111;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.DeSEMS-content {
+  color: #888;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.DeSEMS-img {
+  max-width: 800px;
+  margin: 20px auto;
+  max-height: 500px;
 }/*# sourceMappingURL=style.css.map */
