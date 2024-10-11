@@ -265,8 +265,16 @@ html {
       img {
         width: 30px;
       }
-      span {
+      > span {
         font-size: 14px;
+        > span {
+          display: flex;
+          img {
+            margin-left: 5px;
+            width: 20px;
+            filter: invert(9%) sepia(6%) saturate(14%) hue-rotate(348deg) brightness(102%) contrast(89%);
+          }
+        }
         &::after {
           content: "";
           display: block;
@@ -881,6 +889,7 @@ html {
     .img-box {
       width: 290px;
       min-width: auto;
+      margin-top: 80px;
     }
     .factory-list li {
       flex-wrap: wrap;
@@ -901,30 +910,32 @@ html {
       height: auto;
     }
   }
-}
-.drone {
-  height: 500px;
-  margin-bottom: 100px;
-  .title-box h4 {
-    font-size: 24px;
+  .drone {
+    height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    .title-box h4 {
+      font-size: 24px;
+    }
+    .drone-list {
+      h5 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      span {
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      p {
+        font-size: 14px;
+      }
+      img {
+        top: 55px;
+      }
+    }
   }
-  .drone-list {
-    h5 {
-      font-size: 20px;
-      font-weight: 500;
-    }
-    span {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-    p {
-      font-size: 14px;
-    }
-    img {
-      top: 55px;
-    }
-  }
 }
+
 @media screen and (max-width: 720px) {
   .drone .title-box {
     margin-bottom: 30px;
@@ -999,7 +1010,7 @@ html {
       }
     }
     .whoarewe-list li:not(:first-child) {
-      margin-top: 20px;
+      // margin-top: 20px;
     }
   }
   // 공장
@@ -1017,10 +1028,9 @@ html {
   // }
   // 드론
   .drone {
-    height: auto;
-    padding-bottom: 20px;
+    // padding-top: 30px;
     .title-box {
-      padding-top: 20px;
+      // padding-top: 20px;
       margin-bottom: 10px;
       h3 {
         font-size: 6vw;
@@ -1038,18 +1048,9 @@ html {
       }
     }
   }
-  .drone .drone-list {
-    gap: 20px;
-    span {
-      margin-bottom: 0;
-    }
-  }
   // 스마트팜
   .smartFarm {
-    padding: 20px 30px;
-  }
-  .smartFarm .wrapper {
-    margin-top: 20px;
+    padding: 50px 30px;
   }
   .smartFarm .front,
   .smartFarm .back {
@@ -1067,7 +1068,7 @@ html {
   }
   // 풋터
   .footer .main-footer {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 20px;
     flex-wrap: wrap;
     gap: 10px;
@@ -1098,13 +1099,13 @@ html {
     padding-top: 10px;
   }
   .whoarewe {
-    padding-top: 30px;
+    // padding-top: 30px;
   }
   .whoarewe .whoarewe-img img {
     bottom: 0;
   }
   .smartFarm {
-    padding: 20px 15px;
+    padding: 50px 15px;
   }
 }
 @media screen and (max-width: 400px) {
