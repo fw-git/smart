@@ -973,6 +973,9 @@ html {
     top: 30px;
     width: 100%;
   }
+  .factory-text .tooltip img {
+    height: auto;
+  }
 }
 .drone {
   height: 500px;
